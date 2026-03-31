@@ -48,12 +48,25 @@ Removes temporary files to help free up space and improve system cleanliness.
 Use this script during routine maintenance or when troubleshooting slow system performance caused by temporary file buildup.
 
 ---
+### 4. Get-DiskHealth.ps1
 
+Checks local drive storage usage and flags low disk space.
+
+**What it checks:**
+- Drive letter
+- Volume name
+- Total disk size
+- Used space
+- Free space
+- Free space percentage
+
+**Use case:**
+Use this script when troubleshooting low storage, slow performance, or preparing a machine for software installation.
 ## Requirements
 
 - Windows PowerShell or PowerShell 7
 - Windows operating system
-- Administrator privileges may be required for some actions depending on system settings
+- Administrator privileges may be required for some actions depending on system settings (Set-ExecutionPolicy -Scope Process -ExecutionPolicy Bypass)
 
 ## How to Run
 
